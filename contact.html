@@ -1,0 +1,182 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>TecGames | Contactanos</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style2.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+ </head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/blaaaaaaaaaaaaa.jpg" alt="" width="55px"/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    
+						    	<li><a href="index.html">Inicio</a></li>
+						    	<li><a href="shop.html">Catalogo</a></li>
+						    	<li><a href="team.html">Politica de contenido</a></li>
+								<li><a href="contact.html">Contactanos</a></li>								
+								<div class="clear"></div>
+							
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  
+				      <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Buscar..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+						
+					
+		           <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	</div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+				  <div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.636728284074!2d-88.8690003856908!3d13.496468206796424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7cad5836eeec8b%3A0xbd6b5a797f148b18!2sItca%20Zacatecoluca!5e0!3m2!1ses!2ssv!4v1657229604609!5m2!1ses!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#666;text-align:left;font-size:12px"></a></small>
+				  </div>
+				</div>
+				<div class="col-md-5">
+					<p class="m_8">En nuestra plataforma podrás encontrar una amplia y actualizada variedad de juegos al mejor precio, esperamos que estes satisfecho con nuestros servicios y nos recomiendes con tus amigos. <br> <br> Puedes contactarnos por nuestras redes sociales o desde nuestra cede para obtener mas información o reportar una queja.</p>
+					<div class="address">
+				                <p><strong>Nombre de la empresa: </strong> ITCA FEPADE </p>
+						   		<p> <strong>Dirección:</strong> Km. 64 1/2, desvío Hacienda El Nilo, sobre autopista a Zacatecoluca y Usulután </p>
+						   		<p><strong>Teléfono: </strong> (503) 2334-0763, (503) 2334-0768 Fax. (503) 2334-0462</p>
+				   		<p> <strong>Nombre del director:</strong> Christian Antonio Guevara </p>
+				   		<p> <strong>Nombre del gerente general:</strong> Vanesa Morazán</p>
+				 	 	<p> <strong>Correo electronico:</strong> megateczacatecoluca@itca.edu.sv</p>
+				   		<p> <strong>Siguenos en:</strong>  <span><a href="https://www.facebook.com/JohanDcrtz">Facebook</a></span>, <span>Twitter</span></p>
+				   </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 contact">
+				  <form method="post" action="contact-post.html">
+					<div class="to">
+                     	<input type="text" class="text" value="Nombre Completo" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre Completo';}">
+					 	<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+					 	<input type="text" class="text" value="Tema" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Tema';}">
+					</div>
+					<div class="text">
+	                   <textarea value="Mensaje:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensaje:';}">Mensaje:</textarea>
+	                   <div class="form-submit">
+			           <input name="submit" type="submit" id="submit" value="Enviar"><br>
+			           </div>
+	                </div>
+	                <div class="clear"></div>
+                   </form>
+			     </div>
+		    </div>
+	     </div>
+	   </div>
+	  </div>
+	  <div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Nuestras Politicas</h4>
+						<li><a href="team.html">Ver politicas de contenido</a></li>
+					
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Reportar algún problema</h4>
+						<li><a href="contact.html">Contactenos</a></li>
+						
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4 style="color:black">Atencion al Cliente</h4>
+						<li><a href="#"></a></li>
+					
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Suscribete</h4>
+						<div class="footer_search">
+						   <form>
+							<input type="text" value="Ingresa tu email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+							<input type="submit" value="Enviar">
+						   </form>
+						</div>
+						<ul class="social">	
+						  <li class="facebook"><a href="#"><span> </span></a></li>
+						  <li class="twitter"><a href="#"><span> </span></a></li>
+						  <li class="instagram"><a href="#"><span> </span></a></li>	
+						  <li class="pinterest"><a href="#"><span> </span></a></li>	
+						  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+						</ul>
+						   
+					</ul>
+				</div>
+			</div>
+			
+	</div>
+</body>	
+</html>
